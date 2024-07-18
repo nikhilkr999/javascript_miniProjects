@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* align-items: center; */
+            text-align: center;
+        }
+        body{
+            background-color: black;
+        }
+        form{
+            width: 550px;
+            height: 550px;
+            background-color: #e37979;
+            color: black;
+            
+        }
+        .button{
+            margin-top: 10px;
+            background-color: green;
+            border: 2px solid grey;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            color: white;
+        }
+        .button:hover{
+            cursor: pointer;
+            background-color: rgb(7, 179, 7);
+        }
+        h2{
+            margin-bottom: 150px;
+        }
+        input{
+            background-color: rgb(194, 226, 194);
+            
+        }
+        #result{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Number Guessing game</h2>
+
+        <p>Enter number between 1 and 20</p>
+        <h1>Guess the number</h1>
+        <input type="text" id="num"><br>
+        
+        <input type="submit" value="submit guess" class="button">
+        <div id="result" style="color: rgb(12, 34, 174);"></div>
+       <!-- <div>prevGuess: <span class="prevGuess"></span></div> 
+        <div>guessRemain: <span class="guessRemain"></span></div> -->
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

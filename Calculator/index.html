@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #e1e1e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calc{
+            width: 300px;
+            height: 500px;
+            box-shadow: 4px 4px 30px black;
+            background-color: rgb(38, 37, 37);
+            border: 12px solid rgb(27, 21, 21);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        form input{
+            width: 100%;
+            height: 150px;
+            border-radius: 20px;
+            border: none;
+            text-align: right;
+            pointer-events: none;
+            background-color: black;
+        }
+        .buttons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
+
+        }
+        .btn{
+            width: 50px;
+            height: 50px;
+            flex: 0 0 22%;
+            margin: 5px 0;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn-yellow{
+            background-color: rgb(253, 253, 170);
+        }
+        .btn-grey{
+            background-color: rgb(220, 213, 213);
+        }
+        .screen{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+    </style>
+     <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <section class="calc">
+        <form action="">
+            <input type="text" class="screen">
+        </form>
+
+        <div class="buttons">
+            <button type="button" class="btn btn-yellow" data-num="*">*</button>
+            <button type="button" class="btn btn-yellow" data-num="/">/</button>
+            <button type="button" class="btn btn-yellow" data-num="-">-</button>
+            <button type="button" class="btn btn-yellow" data-num="+">+</button>
+
+            <button type="button" class="btn btn-grey" data-num="9">9</button>
+            <button type="button" class="btn btn-grey" data-num="8">8</button>
+            <button type="button" class="btn btn-grey" data-num="7">7</button>
+            <button type="button" class="btn btn-grey" data-num="6">6</button>
+            <button type="button" class="btn btn-grey" data-num="5">5</button>
+            <button type="button" class="btn btn-grey" data-num="4">4</button>
+            <button type="button" class="btn btn-grey" data-num="3">3</button>
+            <button type="button" class="btn btn-grey" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" data-num="1">1</button>
+            <button type="button" class="btn btn-grey" data-num="0">0</button>
+            <button type="button" class="btn btn-grey" data-num=".">.</button>
+
+            <button type="button" class="btn btn-equal" data-num="">=</button>
+            <button type="button" class="btn btn-clear" data-num="1">clr</button>
+            
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
